@@ -1,2 +1,2 @@
-# LeetCode-Solutions-js-c-
+# LeetCode-Solutions-js-c++
 Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
