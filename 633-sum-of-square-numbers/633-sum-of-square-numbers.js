@@ -7,6 +7,12 @@ var judgeSquareSum = function (c) {
     while (a * a <= c) {
 
         let b = c - a * a;
+        //one apprache
+        // let isB = Math.sqrt(c - a * a)
+        // if (isB == Math.round(isB))
+        //     return true
+        
+        //second way
         if (isPerfectSquare(0, b, b)) {
             return true
         } a++
