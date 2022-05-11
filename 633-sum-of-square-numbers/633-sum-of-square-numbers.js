@@ -13,22 +13,17 @@ var judgeSquareSum = function (c) {
         //     return true
         
         //second way
-        if (isPerfectSquare(0, b, b)) {
-            return true
-        } a++
-    }
-    return false
-};
-var isPerfectSquare = function (min, max, num) {
-
-    while (min <= max) {
+        let min=0,max=b
+        while (min <= max) {
         let mid = parseInt((max + min) / 2);
-        if (mid * mid == num) {
+        if (mid * mid == b) {
             return true
         }
-        else if (mid * mid < num) min = mid + 1;
+        else if (mid * mid < b) min = mid + 1;
         else max = mid - 1;
 
+        }
+    a++
     }
     return false
 };
