@@ -6,20 +6,17 @@ var judgeSquareSum = function (c) {
     let a = 0
     while (a * a <= c) {
 
-        // let isB = Math.sqrt(c - a * a)
-        // console.log(a, isB)
-
-        if (isPerfectSquare(c - a * a)) {
+        let b = c - a * a;
+        if (isPerfectSquare(0, b, b)) {
             return true
         } a++
     }
     return false
 };
-var isPerfectSquare = function (num) {
-    let min = 0, max = num, mid;
+var isPerfectSquare = function (min, max, num) {
 
     while (min <= max) {
-        mid = parseInt((max + min) / 2);
+        let mid = parseInt((max + min) / 2);
         if (mid * mid == num) {
             return true
         }
